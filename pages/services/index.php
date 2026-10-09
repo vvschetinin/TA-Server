@@ -6,9 +6,7 @@
 
 <head>
   <!-- Yandex.Metrika counter -->
-  <?php if (file_exists($root . "/interface/seo/metrics.php")): ?>
-    <?php require_once $root . '/interface/seo/metrics.php'; ?>
-  <?php endif; ?>
+  <!-- Код метрики -->
   <!-- End Yandex.Metrika counter -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.2, user-scalable=yes">
@@ -26,9 +24,9 @@
 </head>
 
 <body>
-  <noscript>
+  <!-- <noscript>
     <div><img src="https://mc.yandex.ru/watch/65009764" style="position:absolute; left:-9999px;" alt=""></div>
-  </noscript>
+  </noscript> -->
   <div class="site-wrapper">
     <!-- Подключение Header -->
     <?php if (file_exists($root . "/template/shared/header.php")): ?>
@@ -39,8 +37,8 @@
       <section class="hero hero--small">
         <div class="hero-container">
           <div class="hero-content">
+            <p class="sectorname">От бизнес-задачи — к цифровому решению | Владлен Щетинин</p>
             <h1 class="hero-title">
-              <span class="sectorname">От бизнес-задачи — к цифровому решению | Владлен Щетинин</span>
               Сайты, контент и инструменты автоматизации
               <span>Продуманная структура. Понятный результат.</span>
             </h1>
@@ -142,20 +140,20 @@
               <h2 class="h2-title deco-line mb-2">Комплексные цифровые решения под задачи бизнеса</h2>
             </div>
             <div class="col-100">
-            <p>
-              Создаю и внедряю веб-решения, которые помогают бизнесу понятнее представлять свои продукты и услуги, привлекать клиентов, автоматизировать рутинные
-              операции и улучшать взаимодействие с клиентами.
-            </p>
-            <p>
-              Не просто разрабатываю отдельные инструменты, а выстраиваю решение вокруг задачи: что необходимо сделать, для кого и какой результат должен получить
-              бизнес. Ниже — основные услуги, которые можно использовать отдельно или объединять в комплексные решения.
-            </p>
-          </div>
+              <p>
+                Создаю и внедряю веб-решения, которые помогают бизнесу понятнее представлять свои продукты и услуги, привлекать клиентов, автоматизировать рутинные
+                операции и улучшать взаимодействие с клиентами.
+              </p>
+              <p>
+                Не просто разрабатываю отдельные инструменты, а выстраиваю решение вокруг задачи: что необходимо сделать, для кого и какой результат должен получить
+                бизнес. Ниже — основные услуги, которые можно использовать отдельно или объединять в комплексные решения.
+              </p>
+            </div>
           </div>
           <div class="row justify-center">
             <div class="col-100 col-md-50 col-lg-40 mb-2">
               <article class="services-item">
-                <a href="/services/content/" title="Заказать контент-маркетинг">
+                <a href="/pages/services/content/" title="Заказать контент-маркетинг">
                   <div class="services-banner">
                     <picture class="inner">
                       <img src="/assets/images/services/content/content.webp" alt="Создание контента и копирайтинг для бизнеса" loading="lazy" />
@@ -170,13 +168,13 @@
                       и продуктов.
                     </p>
                   </div>
-                  <a href="/services/content/" class="find-btn">Подробнее об услуге</a>
+                  <a href="/pages/services/content/" class="find-btn">Подробнее об услуге</a>
                 </div>
               </article>
             </div>
             <div class="col-100 col-md-50 col-lg-40 mb-2">
               <article class="services-item">
-                <a href="/services/faqbots/" title="Разработка FAQ-ботов на заказ">
+                <a href="/pages/services/faqbots/" title="Разработка FAQ-ботов на заказ">
                   <div class="services-banner">
                     <picture class="inner">
                       <img src="/assets/images/services/faqbots/faqbots.webp" alt="Разработка умных FAQ-ботов для Telegram" loading="lazy" />
@@ -191,13 +189,13 @@
                       посетителя к заявке.
                     </p>
                   </div>
-                  <a href="/services/faqbots/" class="find-btn">Подробнее об услуге</a>
+                  <a href="/pages/services/faqbots/" class="find-btn">Подробнее об услуге</a>
                 </div>
               </article>
             </div>
             <div class="col-100 col-md-50 col-lg-40 mb-2 mb-0--md">
               <article class="services-item">
-                <a href="/services/landingpage/" title="Создание лендингпейдж для бизнеса">
+                <a href="/pages/services/landingpage/" title="Создание лендингпейдж для бизнеса">
                   <div class="services-banner">
                     <picture class="inner">
                       <img src="/assets/images/services/landingpage/landingpage.webp" alt="Создание лендингпейдж для бизнеса" loading="lazy" />
@@ -212,13 +210,13 @@
                       целевому действию.
                     </p>
                   </div>
-                  <a href="/services/landingpage/" class="find-btn">Подробнее об услуге</a>
+                  <a href="/pages/services/landingpage/" class="find-btn">Подробнее об услуге</a>
                 </div>
               </article>
             </div>
             <div class="col-100 col-md-50 col-lg-40 mb-0">
               <article class="services-item">
-                <a href="/services/quizzes/" title="Заказать калькуляторы и квизы для помощи посетителям сайта">
+                <a href="/pages/services/quizzes/" title="Заказать калькуляторы и квизы для помощи посетителям сайта">
                   <div class="services-banner">
                     <picture class="inner">
                       <img src="/assets/images/services/quizzes/quizzes.webp" alt="Создание калькуляторов и квизов для сайта" loading="lazy" />
@@ -233,7 +231,7 @@
                       консультаций.
                     </p>
                   </div>
-                  <a href="/services/quizzes/" class="find-btn">Подробнее об услуге</a>
+                  <a href="/pages/services/quizzes/" class="find-btn">Подробнее об услуге</a>
                 </div>
               </article>
             </div>

@@ -6,9 +6,7 @@
 
 <head>
   <!-- Yandex.Metrika counter -->
-  <?php if (file_exists($root . "/interface/seo/metrics.php")): ?>
-    <?php require_once $root . '/interface/seo/metrics.php'; ?>
-  <?php endif; ?>
+  <!-- Код метрики -->
   <!-- End Yandex.Metrika counter -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.2, user-scalable=yes">
@@ -26,9 +24,9 @@
 </head>
 
 <body>
-  <noscript>
+  <!-- <noscript>
     <div><img src="https://mc.yandex.ru/watch/65009764" style="position:absolute; left:-9999px;" alt=""></div>
-  </noscript>
+  </noscript> -->
   <div class="site-wrapper">
     <!-- Подключение Header -->
     <?php if (file_exists($root . "/template/shared/header.php")): ?>
@@ -39,11 +37,9 @@
       <section class="hero hero--small">
         <div class="hero-container">
           <div class="hero-content">
+            <p class="sectorname">Портфолио реализованных проектов | Владлен Щетинин</p>
             <h1 class="hero-title">
-              <!-- Внедряем основной идентификатор раздела -->
-              <span class="sectorname">Портфолио реализованных проектов | Владлен Щетинин</span>
               Реализованные проекты и кейсы
-              <!-- Перечисляем конкретные направления работ для охвата семантики -->
               <span>Разработка сайтов, контент и сервисы автоматизации</span>
             </h1>
             <div class="hero-text">

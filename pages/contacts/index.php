@@ -6,9 +6,7 @@
 
 <head>
   <!-- Yandex.Metrika counter -->
-  <?php if (file_exists($root . "/interface/seo/metrics.php")): ?>
-    <?php require_once $root . '/interface/seo/metrics.php'; ?>
-  <?php endif; ?>
+  <!-- Код метрики -->
   <!-- End Yandex.Metrika counter -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.2, user-scalable=yes">
@@ -26,9 +24,9 @@
 </head>
 
 <body>
-  <noscript>
+  <!-- <noscript>
     <div><img src="https://mc.yandex.ru/watch/65009764" style="position:absolute; left:-9999px;" alt=""></div>
-  </noscript>
+  </noscript> -->
   <div class="site-wrapper">
     <?php if (file_exists($root . "/template/shared/header.php")): ?>
       <?php require_once $root . '/template/shared/header.php'; ?>
@@ -39,22 +37,24 @@
           role="img" aria-label="Рабочее пространство веб-разработчика: обсуждение проекта" id="hero-figure-contact">
         </figure>
         <div class="hero-container">
+
           <div class="hero-content">
+            <p class="sectorname">Контакты для обсуждения проекта | Владлен Щетинин</p>
             <h1 class="hero-title">
-              <!-- Четкое позиционирование для поиска -->
-              <span class="sectorname">Контакты для обсуждения проекта | Владлен Щетинин</span>
               Обсудим ваш проект
-              <!-- Сохраняем дружелюбный тон + добавляем удаленный формат -->
               <span>за чашкой кофе или онлайн</span>
             </h1>
-            <article class="hero-text">
-              <h2 class="p-article color-white">
-                Ищете специалиста для создания сайта или автоматизации бизнеса? Просто напишите мне. Давайте обсудим задачи и найдём решение, которое поможет вашему
-                бизнесу.
-              </h2>
+            <div class="hero-text">
+              <div class="hero-text">
+                <p class="h2-subtitle">
+                  Ищете специалиста для создания сайта или автоматизации бизнеса? Просто напишите мне. Давайте обсудим задачи и найдём решение, которое поможет вашему
+                  бизнесу.
+                </p>
+              </div>
               <p class="font-middle">Свяжитесь для бесплатной консультации уже сегодня!</p>
-            </article>
+            </div>
           </div>
+
         </div>
         <span class="hero-logo-circle svg" aria-hidden="true">
           <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 573.7 676.8"

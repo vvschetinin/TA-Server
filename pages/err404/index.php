@@ -1,4 +1,4 @@
-<?header('Content-type: text/html; charset=utf-8');?>
+<? header('Content-type: text/html; charset=utf-8'); ?>
 <?php $root = $_SERVER['DOCUMENT_ROOT']; ?>
 <?php require_once $root . '/interface/init.php'; ?>
 <!DOCTYPE html>
@@ -30,51 +30,51 @@
   <meta property="og:locale" content="ru_RU">
   <!-- Add Структурированных данных -->
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Владлен Щетинин - AI-решения и автоматизация бизнеса",
-    "description": "Профессиональные AI-инструменты, чат-боты и автоматизация бизнес-процессов в Москве и Московской области. Консультации и разработка для вашего бизнеса.",
-    "image": "https://vschetinin.ru/assets/images/ogimage/og-err404-image.jpg",
-    "url": "https://vschetinin.ru/",
-    "telephone": "+79260522029",
-    "email": "info@vschetinin.ru",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Ивантеевка",
-      "addressRegion": "Московская область",
-      "addressCountry": "RU"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 55.9711,
-      "longitude": 37.9209
-    },
-    "openingHoursSpecification": [{
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday",
-        "Saturday"
-      ],
-      "opens": "09:00",
-      "closes": "18:00"
-    }],
-    "sameAs": [
-      "https://t.me/VladlenGross"
-    ],
-    "contactPoint": {
-      "@type": "ContactPoint",
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Владлен Щетинин - AI-решения и автоматизация бизнеса",
+      "description": "Профессиональные AI-инструменты, чат-боты и автоматизация бизнес-процессов в Москве и Московской области. Консультации и разработка для вашего бизнеса.",
+      "image": "https://vschetinin.ru/assets/images/ogimage/og-err404-image.jpg",
+      "url": "https://vschetinin.ru/",
       "telephone": "+79260522029",
-      "contactType": "customer service",
       "email": "info@vschetinin.ru",
-      "areaServed": "RU",
-      "availableLanguage": "Russian"
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Ивантеевка",
+        "addressRegion": "Московская область",
+        "addressCountry": "RU"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 55.9711,
+        "longitude": 37.9209
+      },
+      "openingHoursSpecification": [{
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ],
+        "opens": "09:00",
+        "closes": "18:00"
+      }],
+      "sameAs": [
+        "https://t.me/VladlenGross"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+79260522029",
+        "contactType": "customer service",
+        "email": "info@vschetinin.ru",
+        "areaServed": "RU",
+        "availableLanguage": "Russian"
+      }
     }
-  }
   </script>
   <!-- Add Styles -->
   <link rel="stylesheet" crossorigin href="/assets/styles/main.css">
@@ -91,10 +91,10 @@
       <section class="hero hero--small">
         <div class="hero-container">
           <div class="hero-content">
-            <h1 class="hero-title"><span class="sectorname">Error 404</span>Кажется, вы заблудились!</h1>
+            <p class="sectorname">Error 404</p>
+            <h1 class="hero-title">Кажется, вы заблудились!</h1>
           </div>
         </div>
-
         <span class="hero-logo-circle svg" aria-hidden="true">
           <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 573.7 676.8"
             style="enable-background: new 0 0 573.7 676.8" xml:space="preserve" role="img"
@@ -184,8 +184,7 @@
               <h2>Запрошенная вами страница не существует</h2>
               <p class="mt-1">
                 Это могло произойти из-за ввода неправильного URL-адреса, загрузки старой страницы из поисковой системы
-                или попытки просмотреть страницу, которая была
-                удалена.
+                или попытки просмотреть страницу, которая была удалена.
               </p>
               <div class="button-wrap text-left mt-2 mt-3--lg">
                 <a href="/" class="view-btn">На главную страницу</a>
@@ -198,5 +197,5 @@
       <!-- ================================================== -->
 
       <?php if (file_exists($root . "/template/shared/footer.php")): ?>
-      <?php require_once $root . '/template/shared/footer.php';?>
-      <?php endif;?>
+        <?php require_once $root . '/template/shared/footer.php'; ?>
+      <?php endif; ?>

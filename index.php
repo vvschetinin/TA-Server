@@ -6,9 +6,7 @@
 
 <head>
   <!-- Yandex.Metrika counter -->
-  <?php if (file_exists($root . "/interface/seo/metrics.php")): ?>
-    <?php require_once $root . '/interface/seo/metrics.php'; ?>
-  <?php endif; ?>
+  <!-- Код метрики -->
   <!-- End Yandex.Metrika counter -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.2, user-scalable=yes">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -19,16 +17,16 @@
   <?php if (file_exists($root . "/interface/seo/headtitle.php")): ?>
     <?php require_once $root . '/interface/seo/headtitle.php'; ?>
   <?php endif; ?>
-  <meta name="yandex-verification" content="3940b0f584a6e7ca">
+  <!-- <meta name="yandex-verification" content="3940b0f584a6e7ca"> -->
   <!-- Add Styles -->
   <link rel="stylesheet" crossorigin href="/assets/styles/main.css">
   <!-- Add Metrics -->
 </head>
 
 <body class="">
-  <noscript>
+  <!-- <noscript>
     <div><img src="https://mc.yandex.ru/watch/65009764" style="position:absolute; left:-9999px;" alt=""></div>
-  </noscript>
+  </noscript> -->
   <div class="site-wrapper">
     <!-- Подключение Header -->
     <?php if (file_exists($root . "/template/shared/header.php")): ?>
@@ -39,21 +37,20 @@
       <!-- Секция Hero -->
       <section class="hero hero--large bg-hero">
         <figure class="hero-media bg--cover" style="background-image: url(/assets/images/hero/main-hero.webp)" role="img"
-          aria-label="Веб-разработка и IT-инструментоы в бизнесе: современное производство и технологии" id="hero-figure">
+          aria-label="Веб-разработка и инструментоы автоматизации для бизнеса: современные подходы и технологии" id="hero-figure">
         </figure>
         <div class="hero-container">
           <div class="hero-content">
+            <p class="sectorname">Веб-разработка и экспертиза | Владлен Щетинин</p>
             <h1 class="hero-title">
-              <span class="sectorname">Веб-разработка и экспертиза | Владлен Щетинин</span>
               Цифровые инструменты для бизнеса
-              <span>
-                Создание сайтов, контента и сервисов
-              </span>
+              <span>Создание сайтов, контента и сервисов</span>
             </h1>
             <div class="hero-text">
-              <h2 class="h2-subtitle">
-                Продуманные решения под конкретную задачу: от сайтов и лендингов до FAQ-ботов, калькуляторов и квизов. Работаю лично, без лишних посредников — с акцентом на результат и удобство для клиента.
-              </h2>
+              <p class="h2-subtitle">
+                Продуманные решения под конкретную задачу: от сайтов и лендингов до FAQ-ботов, калькуляторов и квизов. Работаю лично, без лишних посредников — с
+                акцентом на результат и удобство для клиента.
+              </p>
             </div>
             <div class="hero-buttons">
               <button class="btn btn--purple js-startproject">Обсудить задачу</button>
@@ -145,19 +142,18 @@
         <div class="container--middle">
           <div class="row content-block element-animation-up">
             <div class="col-100 flex justify-center">
-              <!-- Оптимизировал скрытый заголовок для роботов -->
-              <h2 class="hidden">Услуги веб-разработки и автоматизации</h2>
               <blockquote class="home-quotes">
                 <?php echo $slogan; ?>
               </blockquote>
             </div>
             <div class="col-100">
-              <article class="mt-3 mt-5--lg">
-                <h2 class="p-article mb-0">
-                  <span class="font-middle color-white">Четыре направления, которые решают реальные задачи бизнеса.</span>
-                  Создаю инструменты, которые работают на понятность предложения, удобство клиента и экономию времени команды. Можно заказать отдельно или объединить в комплексное решение.
-                </h2>
-              </article>
+              <div class="mt-3 mt-5--lg">
+                <h2 class="h3-title mb-05">Четыре направления, которые решают реальные задачи бизнеса.</h2>
+                <p>
+                  Создаю инструменты, которые работают на понятность предложения, удобство клиента и экономию времени команды. Можно заказать отдельно или объединить в
+                  комплексное решение.
+                </p>
+              </div>
             </div>
           </div>
           <div class="row element-animation-up">
@@ -246,7 +242,7 @@
               </p>
             </article>
             <article class="telegram-info col-100 mt-2">
-                <h2 class="p-article mb-0">
+              <h2 class="p-article mb-0">
                 <span class="font-middle display-block color-white pb-05">Хотите получать практические материалы по автоматизации и веб-решениям?</span>
                 В своем Telegram-канале разбираю, как с помощью ботов, лендингов, квизов и современных инструментов решать реальные задачи бизнеса: снижать нагрузку,
                 повышать понятность предложения и получать больше заявок.
