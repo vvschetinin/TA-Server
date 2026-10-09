@@ -37,18 +37,18 @@
       <section class="hero hero--small">
         <div class="hero-container">
           <div class="hero-content">
-            <p class="sectorname">Full-stack разработчик с 10+ годами опыта | Владлен Щетинин</p>
+            <p class="sectorname">Обо мне</p>
             <h1 class="hero-title">
-              Создание эффективных цифровых решений
-              <span>Сайты, контент и сервисы автоматизации</span>
+              Full-stack разработчик с 10+ годами опыта
+              <span>Владлен Щетинин</span>
             </h1>
-            <div class="hero-text">
-              <!-- <h2 class="h2-subtitle">
-                Помогаю компаниям понятнее представлять услуги, привлекать клиентов и снижать нагрузку на сотрудников с помощью продуманных веб-решений.
-              </h2> -->
-            </div>
+            <p class="h2-subtitle mb-1">
+              Создание эффективных цифровых решений
+              <span class="display-block">Сайты, контент и сервисы автоматизации</span>
+            </p>
+            <div class="hero-text"></div>
             <div class="hero-buttons">
-              <button class="btn btn--purple js-startproject">Обсудить задачу</button>
+              <button class="btn btn--purple js-startproject" aria-controls="modal-form" aria-haspopup="dialog">Обсудить задачу</button>
               <a class="btn btn--white" href="/services/">Посмотреть услуги</a>
             </div>
           </div>
@@ -141,10 +141,11 @@
               <h2 class="h2-title deco-line mb-1 mb-0--lg">О себе</h2>
             </div>
             <article class="col-100 col-lg-65 col-xl-75">
-              <h2 class="p-article"><?php echo $greeting; ?> <br>Меня зовут Владлен Щетинин.</h2>
+              <p class="p-article"><?php echo $greeting; ?> <br>Меня зовут Владлен Щетинин.</p>
               <p>
                 Я full-stack разработчик с более чем 10-летним опытом в веб-разработке. Прошёл путь от вёрстки простых лендингов до создания полноценных
                 веб-инструментов под задачи бизнеса. За это время участвовал в реализации десятков проектов в разных нишах — от локальных сервисов до e-commerce.
+                Смотрите <a class="hover-link" href="/cases/">кейсы и результаты</a>.
               </p>
               <p>
                 Для меня код и контент — это не самоцель, а способ решить конкретную проблему клиента: привлечь целевых посетителей, упростить коммуникацию, сократить
@@ -159,24 +160,28 @@
           <div class="row">
             <div class="col-100 about-grid">
               <div
+                aria-label="Прыжок с парашютом вдвоём на фоне неба и земли"
                 class="card card1 bg--cover"
-                style="background-image: url(/assets/images/about/myfoto-1.webp)"
                 role="img"
-                aria-label="Владлен Щетинин: Прыжок с парашютом (активный отдых)">
+                style="background-image: url(/assets/images/about/myfoto-1.webp)">
                 <div class="textcard">
                   <p>Экстрим и драйв</p>
                 </div>
               </div>
               <div
+                aria-label="Портрет Владлена Щетинина за компьютером"
                 class="card card2 bg--cover"
-                style="background-image: url(/assets/images/about/myfoto-2.webp)"
                 role="img"
-                aria-label="Портрет разработчика Владлена Щетинина">
+                style="background-image: url(/assets/images/about/myfoto-2.webp)">
                 <div class="textcard">
                   <p>Личный подход</p>
                 </div>
               </div>
-              <div class="card card3 bg--cover" style="background-image: url(/assets/images/about/myfoto-3.webp)" role="img" aria-label="Увлечение технологиями и AI">
+              <div
+                aria-label="Две ступени ракеты садятся на площадку"
+                class="card card3 bg--cover"
+                role="img"
+                style="background-image: url(/assets/images/about/myfoto-3.webp)">
                 <div class="textcard">
                   <p>Мне нравится</p>
                 </div>
@@ -270,7 +275,7 @@
                 , и давайте обсудим, как мы сможем вывести ваш проект на новый уровень.
               </p>
               <div class="button-wrap flex justify-center mt-2 mt-3--lg">
-                <button class="start-project-btn display-inline-block js-startproject">Обсудить ваш проект</button>
+                <button class="start-project-btn display-inline-block js-startproject" aria-controls="modal-form" aria-haspopup="dialog">Обсудить ваш проект</button>
               </div>
             </div>
           </div>
